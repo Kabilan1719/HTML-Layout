@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .title{
+            text-align: center;
+        }
+        body
+        {
+            min-height: 100%;
+            background: #eee;
+            font-family: 'Lato', sans-serif;
+
+        }
+        input[type=text]
+        {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .button
+        {
+            width: 100%;
+            background-color: rgb(57, 161, 210);
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .button:hover
+        {
+            background-color: rgb(113, 190, 226);
+        }
+        div 
+        {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        textarea
+        {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type=date]
+        {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .container 
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .sub-container 
+        {
+            width: 400px;
+        }
+        .employee 
+        {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        .employee td
+        {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        .employee tr:nth-child(even)
+        {
+            background-color: #f2f2f2;
+        }
+        .employee tr:hover 
+        {
+            background-color: #ddd;
+        }
+        .employee th
+        {
+            border: 1px solid #ddd;
+            padding: 8px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: center;
+            background-color: whitesmoke;
+            color: rgb(60, 57, 60);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="sub-container">
+    <h2 class="title">EMPLOYEE TASK TRACKER</h2>
+    <div>
+    <form action="">
+        <label for="name">Employee Name</label>
+        <input type="text" id="name" required placeholder="Name">
+        <label for="title">Task Title</label>
+        <input type="text" id="title" required placeholder="Task Title">
+        <label for="discription">Task Description</label>
+        <textarea name="discription" id="discription" rows="2" cols="20"></textarea>
+        <label for="due_date">Due Date</label>
+        <input type="date">
+        <button class="button" type="button">Assign Task</button>
+    </form>
+    </div>
+    </div>
+    </div>
+    <table border="1" class="employee">
+        <tr>
+            <th colspan="4" style="background-color: rgb(57, 161, 210); color: white;">Task Details</th>
+        </tr>
+        <tr>
+            <th>Employee Name</th>
+            <th>Task Tittle</th>
+            <th>Task Description</th>
+            <th>Due Date</th>
+        </tr>
+        <tr>
+            <td rowspan="3">Kab</td>
+            <td>Design</td>
+            <td>To Design the Webpage</td>
+            <td>12-12-2024</td>
+        </tr>
+        <tr>
+            <td>Server</td>
+            <td>To connect to Server</td>
+            <td>30-12-2024</td>
+        </tr>
+        <tr>
+            <td>Deployment</td>
+            <td>Deploy the Model</td>
+            <td>06-01-2025</td>
+        </tr>
+        <tr>
+            <td>Raju</td>
+            <td>Developer</td>
+            <td>Frontend Devolopment of the project</td>
+            <td>30-12-2024</td>
+        </tr>
+    </table>
+</body>
+</html>
