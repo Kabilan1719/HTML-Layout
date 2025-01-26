@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body style="padding-top: 100px;">
+    <div class="navigation">
+        <div class="container">
+            <div class="row">
+                <nav class="navbar bg-body-tertiary fixed-top">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#">Car Rental</a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Car Rental</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="#">Home Page</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#admin">Admin Page</a>
+                            </li>
+                          </ul>
+                          <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+        </div>
+    </div>
+    <div class="home">
+      <div class="container">
+        <div class="row" id="card1">
+          <div class="col-lg-12 mb-4">
+            <center><h1>Click to Buy</h1></center>
+          </div>
+          <div class="col-lg-3 mb-4">
+            <div class="card car-card" style="width: 18rem;">
+              <img src="https://imgk.timesnownews.com/story/1568287169-The_New_Toyota_Fortuner_TRD_Celebratory_Edition_with_Pearl_White_with_Attitude_Black_Dual_Tone_Exterior_1.jpg" class="card-img-top car-image" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title">Fortuner</h4>
+                  <p class="card-text">Milage: 15</p>
+                  <p class="card-text">Carfare: 2500</p>
+                  <a href="#" class="btn btn-primary book-btn">Book Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 mb-4">
+              <div class="card car-card" style="width: 18rem;">
+                <img src="https://th.bing.com/th/id/OIP.PLVedlQlw-FyZNb2oBv7LQHaEo?rs=1&pid=ImgDetMain" class="card-img-top car-image" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title">BMW</h4>
+                    <p class="card-text">Milage: 10</p>
+                    <p class="card-text">Carfare: 3500</p>
+                    <a href="#" class="btn btn-primary book-btn">Book Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 mb-4">
+                <div class="card car-card" style="width: 18rem;">
+                  <img src="https://th.bing.com/th/id/OIP.6Nqp6mQS1h9sbMqERdDfBQAAAA?rs=1&pid=ImgDetMain" class="card-img-top car-image" alt="...">
+                    <div class="card-body">
+                      <h4 class="card-title">Audi</h4>
+                      <p class="card-text">Milage: 9</p>
+                      <p class="card-text">Carfare: 3000</p>
+                      <a href="#" class="btn btn-primary book-btn">Book Now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 mb-4">
+                  <div class="card car-card" style="width: 18rem;">
+                    <img src="https://www.hdcarwallpapers.com/download/ford_gt_2016-2560x1440.jpg" class="card-img-top car-image" alt="...">
+                      <div class="card-body">
+                        <h4 class="card-title">Ford</h4>
+                        <p class="card-text">Milage: 12</p>
+                        <p class="card-text">Carfare: 2800</p>
+                        <a href="#" class="btn btn-primary book-btn">Book Now</a>
+                      </div>
+                    </div>
+                  </div>
+        </div>
+      </div>
+    </div>
+    <div class="booking">
+      <div class="container">
+        <div class="row" id="row1">
+          <form id="bookingForm">
+            <div class="mb-3">
+              <label for="carname1" class="form-label">Car Name</label>
+              <input type="text" class="form-control" id="carname1">
+            </div>
+            <div class="mb-3">
+              <label for="startdate" class="form-label">Start Date</label>
+              <input type="date" class="form-control" id="startdate">
+            </div>
+            <div class="mb-3">
+              <label for="enddate" class="form-label">End Date</label>
+              <input type="date" class="form-control" id="enddate">
+            </div>
+            <div class="mb-3">
+              <label for="carprice" class="form-label">Car Price</label>
+              <input type="text" class="form-control" id="carprice">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Accept the cost of the price of Car</label>
+            </div>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal"3 id="calculatefair">Calculate Amount</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="confirmationModalLabel">Booking Confirmation</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p id="faredetails">Total Fare: $0</p>
+            <p>Do you want to confirm the booking?</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-primary" id="confirmBooking">Confirm</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="admin-panel" id="admin">
+        <div class="container">
+            <div class="row" id="row1">
+                <form class="form">
+                    <div class="mb-3">
+                      <label for="carname" class="form-label">Car Model Name:</label>
+                      <input type="text" class="form-control" id="carname">
+                    </div>
+                    <div class="mb-3">
+                        <label for="carimage" class="form-label">Car Image Link:</label>
+                        <input type="text" class="form-control" id="carimage">
+                    </div>
+                    <div class="mb-3">
+                        <label for="carmilage" class="form-label">Car Milage:</label>
+                        <input type="number" class="form-control" id="carmilage">
+                    </div>
+                    <div class="mb-3">
+                        <label for="admin-carprice" class="form-label">Car Price per day:</label>
+                        <input type="number" class="form-control" id="admin-carprice">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+            </div>
+        </div>
+    </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <script src="script.js"></script>
+</body>
+</html>

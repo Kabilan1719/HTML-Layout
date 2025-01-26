@@ -1,0 +1,31 @@
+#row1
+{
+    width: 40%;
+}
+form
+{
+    margin-left: 400px;
+    align-items: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    padding: 25px;
+    border-radius: 15px;
+}
+.car-card 
+{
+    width: 288px;
+    max-width: 100%;
+    height: 384px;
+}
+.car-image 
+{
+    height: 192px;
+    object-fit: cover;
+}
+.booking
+{
+    display: none;
+}
+.admin-panel
+{
+    display: none;
+}
