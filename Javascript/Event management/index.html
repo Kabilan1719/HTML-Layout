@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg gap-4">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#"><img src="https://www.clipartmax.com/png/middle/67-674609_events-corporate-event-events-icon.png" alt="" class="img"></a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav ms-auto gap-4">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#create-event" style="color: white;" id="create-event-li">Create an Event</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#display-event" style="color: white;" id="display-event-li">Display the Events</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+        </div>
+    </div>
+    <div class="tittle">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <center><h1>Event Manager Application</h1></center>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="create-event">
+        <div class="container">
+            <div class="row" id="row">
+                <form class="form">
+                    <div class="mb-3">
+                      <label for="eventitle" class="form-label">Event tittle</label>
+                      <input type="text" class="form-control" id="eventitle">
+                    </div>
+                    <div class="mb-3">
+                      <label for="eventdate" class="form-label">Event Date</label>
+                      <input type="text" class="form-control" id="eventdate">
+                    </div>
+                    <div class="mb-3">
+                        <label for="eventdis" class="form-label">Event Description</label>
+                        <input type="text" class="form-control" id="eventdis">
+                      </div>
+                      <div class="mb-3">
+                        <label for="eventven" class="form-label">Event Venue</label>
+                        <input type="text" class="form-control" id="eventven">
+                      </div>
+                    <button type="submit" class="btn btn-primary" id="addevent">Add an Event</button>
+                    <button type="submit" class="btn btn-primary" id="updatevent" style="display: none;">Update Event</button>
+                  </form>
+            </div>
+        </div>
+    </div>
+    <div class="display-events">
+        <div class="container">
+            <div class="events-navigation">
+                <ul class="events-buttons">
+                    <li class="events-but"><a href="#" style="text-decoration: none;" id="events-li">Events</a></li>
+                    <li class="events-but"><a href="#past-events" style="text-decoration: none;" id="past-events-li">Past Events</a></li>
+                    <li class="events-but"><a href="#present-events" style="text-decoration: none;" id="present-events-li">Present Events</a></li>
+                    <li class="events-but"><a href="#future-events" style="text-decoration: none;" id="future-events-li">Future Events</a></li>
+                </ul>
+            </div>
+            <div id="past-events" class="row justify-content-center g-4"></div>
+            <div id="present-events" class="row justify-content-center g-4"></div>
+            <div class="row justify-content-center" id="future-events"></div>
+            <div class="row justify-content-center g-4" id="card">
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="card event-card position-relative">
+                        <div class="dropdown card-menu">
+                            <button class="btn btn-light btn-sm dropdown-toggle" type="button" id="cardMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-light fa-ellipsis-vertical"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="cardMenuButton">
+                                <li><a class="dropdown-item edit-btn" href="#">Edit</a></li>
+                                <li><a class="dropdown-item delete-btn text-danger" href="#">Delete</a></li>
+                            </ul>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Annual Tech Fest</h5>
+                            <p class="event-date">Date: 15-02-2025</p>
+                            <p class="card-text">Join us for a day of innovation and networking. Explore cutting-edge technology and meet industry leaders.</p>
+                            <p class="card-text"><strong>Venue:</strong> Tech Park Auditorium</p>
+                            <a href="#" class="btn event-action">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="card event-card position-relative">
+                        <div class="dropdown card-menu">
+                            <button class="btn btn-light btn-sm dropdown-toggle" type="button" id="cardMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-light fa-ellipsis-vertical"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="cardMenuButton">
+                                <li><a class="dropdown-item edit-btn" href="#">Edit</a></li>
+                                <li><a class="dropdown-item delete-btn text-danger" href="#">Delete</a></li>
+                            </ul>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Startup Pitch Day</h5>
+                            <p class="event-date">Date: 25-03-2025</p>
+                            <p class="card-text">A platform for startups to showcase their ideas to investors. Don’t miss out on the opportunity!</p>
+                            <p class="card-text"><strong>Venue:</strong> Innovation Hub, City Center</p>
+                            <a href="#" class="btn event-action">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="card event-card position-relative">
+                        <div class="dropdown card-menu">
+                            <button class="btn btn-light btn-sm dropdown-toggle" type="button" id="cardMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-light fa-ellipsis-vertical"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="cardMenuButton">
+                                <li><a class="dropdown-item edit-btn" href="#">Edit</a></li>
+                                <li><a class="dropdown-item delete-btn text-danger" href="#">Delete</a></li>
+                            </ul>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Art & Culture Expo</h5>
+                            <p class="event-date">Date: 10-04-2025</p>
+                            <p class="card-text">Celebrate creativity with local and international artists. Art exhibitions, workshops, and more!</p>
+                            <p class="card-text"><strong>Venue:</strong> City Art Gallery</p>
+                            <a href="#" class="btn event-action">Book Tickets</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

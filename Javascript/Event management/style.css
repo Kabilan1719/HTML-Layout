@@ -1,0 +1,125 @@
+.header
+{
+    background-color: mediumslateblue;
+}
+.img
+{
+    width: 40px;
+}
+.tittle
+{
+    margin-top: 80px;
+}
+#row
+{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: 50%;
+    padding: 30px;
+    border-radius: 20px;
+}
+.create-event
+{
+    margin-top: 80px;
+    margin-left: 520px;
+}
+.events-buttons
+{
+    list-style: none;
+    text-align: center;
+    margin-bottom: 70px;
+}
+.display-events
+{
+    margin-top: 80px;
+}
+.events-but
+{
+    display: inline-block;
+    margin: 5px 8px;
+}
+.events-but a
+{
+    display: inline-block;
+    text-align: center;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: black;
+    background-color: #eee;
+    padding: 8px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.events-but a.active
+{
+    background-color: mediumslateblue;
+    color: white;
+}
+.event-card {
+    width: 320px;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    padding: 20px;
+}
+.event-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.event-date {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+.card .event-action {
+    background-color: #ee626b;
+    border-color: #ee626b;
+    color: white;
+}
+.card .event-action:hover {
+    background-color: #d3545f;
+    border-color: #d3545f;
+}
+.card-menu 
+{
+    position: absolute;
+    left: 200px;
+    z-index: 1;
+}
+.card-menu button {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+}
+.card-menu .dropdown-menu {
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.card-menu .dropdown-item.text-danger {
+    color: #ee626b;
+}
+.card-menu .dropdown-item.text-danger:hover {
+    color: white;
+    background-color: #ee626b;
+}
+.create-event
+{
+    display: none;
+}
+#future-events
+{
+    margin-top: 20px;
+}
+#present-events
+{
+    margin-top: 20px;
+}
+
